@@ -44,7 +44,7 @@ extra-source-files: CHANGELOG.md
 custom-setup
   setup-depends:
       base   >=4.3  && <5
-    , Cabal  >=1.10 && <3.5
+    , Cabal  >=1.10 && <3.6
 
 -- If true,  use pkg-config,  otherwise use the pg_config based build
 -- configuration
@@ -63,7 +63,7 @@ library
 
   other-modules:    Database.PostgreSQL.LibPQ.Compat
   build-depends:
-      base        >=4.3     && <4.16
+      base        >=4.3     && <4.17
     , bytestring  >=0.9.1.0 && <0.12
 
   if !os(windows)
